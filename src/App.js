@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Error from './components/Error';
 import Navbar from './components/Navbar';
 import {projects as Projects} from './components/Projects';
+import ProjectDetails from './components/ProjectDetails';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route exact path='/projects' component={Projects}/>
+          <Route exact path="/projects/:id" component={ProjectDetails} />
           <Route component={Error} />
         </Switch>
       {/* </Router> */}

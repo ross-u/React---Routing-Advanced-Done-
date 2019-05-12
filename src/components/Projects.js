@@ -1,6 +1,7 @@
 // components/Projects.js
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export  const myProjects = [
     {
@@ -27,19 +28,19 @@ export  const myProjects = [
   ]
 
 export const projects = () => {
- 
   return (
     <div>
       <h2>Projects:</h2>
       {
-        myProjects.map((eachProject) => {
+        myProjects.map((project) => {
           return (
-            <div key={eachProject.id}>
-              <h3>
-                {eachProject.name}
+            <div key={project.id} className="project">
+              <h3> 
+                {/* <Link to={`/projects/${project.id}`}> {project.name} </Link> */}
+                <Link to={`/projects/${project.id}?bootcamp=Ironhack&city=BCN`}> {project.name} </Link>
+
               </h3>
-              <h4>{eachProject.technologies}</h4>
-              <hr />
+              <h4>{project.technologies}</h4>
             </div>
           )
       })}

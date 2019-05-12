@@ -28,3 +28,9 @@ div.nav-details > * {
 .selected-link {
   background: rebeccapurple;
 }
+
+.project {
+  padding: 20px 40px;
+  border: 1px solid black;
+  margin-bottom: 40px;
+}
