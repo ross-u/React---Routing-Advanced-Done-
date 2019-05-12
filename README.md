@@ -9,4 +9,4 @@
 
 #### [React Router Training](https://reacttraining.com/react-router)
 
-#### [More Training](
+#### [React Training](https://github.com/ReactTraining)
