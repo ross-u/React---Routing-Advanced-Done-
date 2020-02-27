@@ -3,6 +3,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// We export 2 things from the current file:
+// array with projects - `myProjects` and 
+// `Projects` component
+
 export  const myProjects = [
     {
         id: "1a",
@@ -27,7 +31,7 @@ export  const myProjects = [
     }
   ]
 
-export const projects = () => {
+export const Projects = () => {
   return (
     <div>
       <h2>Projects:</h2>
@@ -36,7 +40,7 @@ export const projects = () => {
           return (
             <div key={project.id} className="project">
               <h3> 
-                {/* <Link to={`/projects/${project.id}`}> {project.name} </Link> */}
+     {/*        <Link to={`/projects/${project.id}`}> {project.name} </Link>                  */}
                 <Link to={`/projects/${project.id}?bootcamp=Ironhack&city=BCN`}> {project.name} </Link>
 
               </h3>
