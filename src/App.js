@@ -7,7 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Error from './components/Error';
 import Navbar from './components/Navbar';
-import {projects as Projects} from './components/Projects';
+import { Projects } from './components/Projects';
 import ProjectDetails from './components/ProjectDetails';
 
 
